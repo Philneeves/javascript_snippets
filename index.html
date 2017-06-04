@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JavaScript Snippets</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+</head>
+<body>
+
+<div class="container">
+
+<h1 class="text-center" >A Collection of JavaScript code snippets just for fun</h1>
+
+<!-- Calculate Factorials begin - taken from coderbyte challenge -->
+
+	<div class="well"> <!-- this is a bootstrap class that provides smaller version of the jumbotron -->
+
+		<h1>Calculate Factorials</h1>
+
+		<!-- this bit taken from http://www.mathsisfun.com/numbers/factorial.html -->
+		<p>The <b>factorial function</b> (symbol: <b><font size="+1">!</font></b>)  
+		means to multiply a series of descending natural numbers. Examples:</p> 
+
+			<ul>										
+				<div class="bigul">
+				  <li><b>4!</b> = 4 × 3 × 2 × 1 = 24</li>
+				  <li><b>7!</b> = 7 × 6 × 5 ×  4 × 3 × 2 × 1 = 5040</li>
+				  <li><b>1!</b> = 1</li>
+			  </div>
+			</ul>								  
+
+		<h4>Enter a number to calculate the factorial:</h4>
+
+			<input type=number value="" id="a">
+			<br><br>
+
+			<button class="btn btn-danger" onclick="FirstFactorial(document.getElementById('a').value)">Submit</button>
+
+		<h4>The answer is: </h4>
+
+		<div>
+
+			<p id="answer">?</p> <!-- this is where the result of the js function FirstFactorial is displayed -->
+
+		</div>
+
+	</div>
+
+<!-- Calculate Factorials end -->
+
+<!-- Cash Register begin - taken from Codecademy challenge -->
+
+	<div class="well">
+
+		<h1>Cash Register</h1>
+
+<table> <!-- Using table to allow item, Amount and Cost to be side by side per item rather item, then amount, then cost then repeat -->
+  <tr>
+    <th>Item</th>
+    <th>Enter Amount:</th>
+    <th>Cost Per Item</th> <!-- related to each this.add cost or 'switch case' per item in js file -->
+  </tr>
+  <tr>
+    <td><input type=text value="Eggs x 6" id="b"></td> <!-- value auto puts 'Eggs x 6' in the input box when displayed-->
+    <td><input type=number value="" id="c"></td> <!-- alphabetical id to allow seperation of each 'switch case' or each 'if...else if' -->
+    <td><input type=text value="$0.98" id="j"></td> <!-- again value puts the cost amount in auto as a placeholder under cost in the table-->
+  </tr>
+  <tr>
+    <td><input type=text value="Milk 1 litre" id="d"></td>
+    <td><input type=number value="" id="e"></td>
+    <td><input type=text value="$1.23" id="k"></td> <!-- value is text not number as amount is for display purposes only and allows the $ sign -->
+  </tr>
+  <tr>
+    <td><input type=text value="Magazine" id="f"></td>
+    <td><input type=number value="" id="g"></td>
+    <td><input type=text value="$4.99" id="l"></td>
+  </tr>
+  <tr>
+    <td><input type=text value="Dairy Milk Chocolate" id="h"></td>
+    <td><input type=number value="" id="i"></td>
+    <td><input type=text value="$0.55" id="m"></td>
+  </tr>
+</table>
+<br>
+
+			<button class="btn btn-danger" onclick="ShoppingList()">Submit</button>
+
+
+		<div>
+
+			<h4>Your bill is: </h4>
+			<p class="ans-box" id="bill">0.00</p>
+
+		</div>
+
+	</div>
+
+<!-- Cash register end -->
+
+<!-- Fibonacci recursion begin -->
+
+<div class="well">
+	<h1>Display the Fibonacci sequence up to a chosen number</h1>
+
+	<input type=number placeholder = "Enter a number" id="fibo">
+			<br><br>
+
+			<button class="btn btn-danger" onclick="fibon(document.getElementById('fibo').value)">Show me the magic</button>
+
+		<div>
+
+			<p id="fibo"></p> <!-- this is where the result of the js function Fibonnaci is displayed -->
+
+		</div>
+
+		<div>
+			<p id="count"></p> <!-- this is where the result of the js function Fibonnaci is displayed -->
+			<p id="recurse"></p> <!-- this is where the result of the js function Fibonnaci is displayed -->
+
+		</div>
+
+</div>
+
+<!-- Fibonacci recursion end -->
+
+</div>
+
+<script src="JSCodeSnippets.js"></script>
+
+</body>
+</html>

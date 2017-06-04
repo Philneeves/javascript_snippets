@@ -1,0 +1,5 @@
+/*Puts the dollar sign before the amount*/
+p.ans-box::before {
+	content: "$";
+	font-weight: bold;
+}
