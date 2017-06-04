@@ -81,6 +81,10 @@ cashRegister.scan(document.getElementById("h").value,document.getElementById("i"
 
 function fibon(num) {
 
+	if (num > 35) {
+		alert("Ooh that's quite a high number your device might crash, choose a number less than 35")
+	} else {
+
 	var num = num;
 	var array1 = [];
 	var array2 = [];
@@ -110,5 +114,7 @@ function fibon(num) {
 		document.getElementById("recurse").innerHTML = array2;
 	}
 }
+}
+
 // Fibonnaci recursion end		
 
